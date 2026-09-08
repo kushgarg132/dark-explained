@@ -1,5 +1,6 @@
 import { CHARACTERS, EVENTS, ERAS } from '../data/dark'
 import type { SpoilerFilter, WorldFilter } from './route'
+import type { ViewId } from './route'
 import { levelVisible, worldVisible } from './filter'
 
 export type SearchResultKind = 'character' | 'alias' | 'event' | 'era'
@@ -9,7 +10,7 @@ export interface SearchResult {
   id: string
   title: string
   subtitle: string
-  view: string
+  view: ViewId
   selection: string[]
 }
 

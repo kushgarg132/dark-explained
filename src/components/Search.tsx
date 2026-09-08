@@ -66,7 +66,7 @@ export function SearchOverlay() {
                   <button
                     type="button"
                     onClick={() => {
-                      navigate(r.view as never, r.selection)
+                      navigate(r.view, r.selection)
                       setOpen(false)
                     }}
                     className="block w-full px-4 py-2 text-left hover:bg-surface-2"
